@@ -13,7 +13,7 @@ BOWS2: https://bows2.ec-lille.fr
 
 External dependencies: STC embedding, Embedding Simulator, steganalysis feature extraction (SRM, GFR, DCTR), and JPEG Toolbox are included in the code package.
 
-Configuration file: `config.m` contains the parameters: scaling factor (gamma), tolerance factor (delta), Population Scale (NP), Immunoselection rate (Isr), Mutation factor (e), Maximum evolution times (G), Clone factor (ncl), Quality Factor (QualityFactor). The random seed is fixed in `config.m` (e.g., `rng_seed = 0`) to ensure consistent results with each run.
+Configuration file: `config.m` contains the parameters: scaling factor (gamma), tolerance factor (delta), Population Scale (NP), Immunoselection rate (Isr), Mutation factor (e), Maximum evolution times (G), Clone factor (ncl), Quality Factor (QualityFactor). The random seed is fixed in `config.m` (rng(0)) to ensure consistent results with each run.
 
 The steps for spatial steganography and JPEG steganography are as follows:
 
