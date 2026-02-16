@@ -1,0 +1,18 @@
+clear all;
+root_cover = 'BOSSBase_cover_256\';
+root_Uimm_cover = 'Uimmcover\';
+rng(2026);
+
+gamma = 0.5;
+delta = 0.4;
+NP = 30;             
+G = 10;   
+Nc1= 4;    
+e=0.5;
+Isr=0.1;
+for i = 1:10000
+    cover = double(imread([root_cover,num2str(i),'.pgm']));
+    [cover_noise] = AIS_f(cover,gamma,delta);
+    imwrite(uint8(cover_noise),[root_Uimm_cover,num2str(i),'.pgm']);
+end 
+
