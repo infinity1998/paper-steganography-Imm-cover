@@ -11,6 +11,8 @@ Data preparation: Please download the BOSSBase v1.01 dataset (256×256 grayscale
 BOSSBase v1.01: https://dde.binghamton.edu/download/  
 BOWS2: https://bows2.ec-lille.fr
 
+Note that due to the limited upload space in github, the current `BOSSBase_cover_256` folder contains a sample original cover `1.pgm` to demonstrate the Uimm cover generation process. To fully run the embedding and steganalysis pipeline, it needs to embed and perform steganalysis on all 10,000 images. Please download the complete dataset from the provided URL and use the `imresize` function to resize the images to 256×256 pixels as the original images，and place all `.pgm` files in the folder 'BOSSBase_cover_256'
+
 External dependencies: STC embedding, Embedding Simulator, steganalysis feature extraction (SRM, GFR, DCTR), and JPEG Toolbox are included in the code package.
 
 Configuration file: `config.m` contains the parameters: scaling factor (gamma), tolerance factor (delta), Population Scale (NP), Immunoselection rate (Isr), Mutation factor (e), Maximum evolution times (G), Clone factor (ncl), Quality Factor (QualityFactor). The random seed is fixed in `config.m` (rng(0)) to ensure consistent results with each run.
